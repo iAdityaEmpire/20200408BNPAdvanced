@@ -1,0 +1,42 @@
+
+
+  pet    "petunia carpet  impetuous"
+
+  p.t    "keep to the right"   "potato"  "spittoon"  "prt"  "vip.treatment"
+
+  p[aeiou]t   "petunia"  "potential"   "kaput"
+
+  p[a-z]t
+  # range based on ASCII
+
+  [0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]
+
+  \d\d\d-\d\d-\d\d\d\d
+
+
+  \d [0-9]
+  \s [ \t\n\r\b\f]
+  \w [a-zA-Z0-9_]
+
+  \d{3}-\d{2}-\d{4}
+
+  *   0 or more
+  +   1 or more
+  ?   0 or 1
+  {n}  exactly n
+  {n,m} n through m (inclusive)
+  {n,}  at least n
+
+  ^  beginning of string
+  $  end of string
+  \b beg/end of word
+
+  ^pro   "professionals only"
+     NOT "the professional edge"
+
+  curtain$   "the final curtain"
+     NOT "it's curtains for us"
+
+  \bthe\b  match "it is the thing"  NOT  "their cats"   "bathe often"
+
+

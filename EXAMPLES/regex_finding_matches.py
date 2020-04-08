@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 import re
 
 s = """lorem ipsum M302 dolor sit amet, consectetur r99 adipiscing elit, sed do
@@ -19,7 +18,7 @@ print()
 m = re.search(pattern, s)  # <3>
 print(m)
 if m:
-    print("Found:", m.group(0))  # <4>
+    print("Found:", m.group(0))  # <4>  # m.group()
 print()
 
 for m in re.finditer(pattern, s):  # <5>
