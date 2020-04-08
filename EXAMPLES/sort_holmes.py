@@ -22,3 +22,4 @@ def strip_articles(title):  # <2>
 
 for book in sorted(books, key=strip_articles):  # <4>
     print(book)
+

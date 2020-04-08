@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 import threading
 import random
 import time
@@ -10,6 +9,8 @@ def doit(num):  # <1>
     print("Hello from thread {}".format(num))
 
 
-for i in range(10):
+for i in range(16):
     t = threading.Thread(target=doit, args=(i,))  # <2>
     t.start()  # <3>
+
+print("Done.")
